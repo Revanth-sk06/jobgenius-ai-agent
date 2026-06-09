@@ -268,7 +268,7 @@ if run_btn:
                 client   = get_client(api_key)
                 prompt   = build_prompt(jd_input, resume_input)
                 response = client.models.generate_content(
-                    model="gemini-2.0-flash-lite",
+                    model="gemini-1.5-flash",
                     contents=prompt
                 )
                 data = safe_parse(response.text)
